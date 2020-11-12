@@ -281,9 +281,9 @@ $(function (e) { /////// jQB ///////////////////////
         $(".clone_box").fadeOut();
         // 클론코딩 호버시 나오게 하기
         $(".prj_list.clone li").hover(function () {
-            $(this).find(".clone_box").fadeIn();
+            $(this).find(".clone_box").stop().fadeIn();
         }, function () {
-            $(this).find(".clone_box").fadeOut();
+            $(this).find(".clone_box").stop().fadeOut();
         }); /////// hover //////////
     } else if (mob === 1) { // 모바일일 때 함수
         // 메뉴 클릭시 디자인 다르게
